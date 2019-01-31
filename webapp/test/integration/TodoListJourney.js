@@ -29,13 +29,13 @@ sap.ui.define([
 		Given.iStartMyApp();
 
 		//Actions
-		When.onTheAppPage.iEnterTextForNewItemAndPressEnter("my test")
+		When.onTheAppPage.iEnterTextForNewItemAndPressEnter("my test 1")
 			.and.iSelectAllItems(true)
-			.and.iClearTheCompletedItems()
-			.and.iEnterTextForNewItemAndPressEnter("my test");
+			.and.iEnterTextForNewItemAndPressEnter("my test 2")
+			.and.iClearTheCompletedItems();
 
 		// Assertions
-		Then.onTheAppPage.iShouldSeeAllButOneItemBeingRemoved("my test");
+		Then.onTheAppPage.iShouldSeeAllButOneItemBeingRemoved("my test 2");
 
 		// Cleanup
 		Then.iTeardownMyApp();
