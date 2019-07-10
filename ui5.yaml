@@ -4,16 +4,14 @@ metadata:
 type: application
 server:
   customMiddleware:
-    - name: ponyTranslator
+    - name: markdownHandler
       beforeMiddleware: serveResources
       mountPath: /
-      configuration:
-        mood: "🐤 happy"
 ---
 specVersion: '1.0'
 kind: extension
 type: server-middleware
 metadata:
-  name: ponyTranslator
+  name: markdownHandler
 middleware:
-  path: middleware/ponyTranslator.js
+  path: lib/middleware/markdownHandler.js

@@ -15,7 +15,8 @@
   "dependencies": {
     "@openui5/sap.m": "^1.60.0",
     "@openui5/sap.ui.core": "^1.60.0",
-    "@openui5/themelib_sap_belize": "^1.60.0"
+    "@openui5/themelib_sap_belize": "^1.60.0",
+    "markdown-it": "^9.0.0"
   },
   "devDependencies": {
     "@ui5/cli": "^1.2.0",
